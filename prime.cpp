@@ -10,7 +10,7 @@ typedef long long ll;
 typedef long double ld;
 
 ll mod=(ll)1e9+7;
-ll p[(ll)1e5];
+ll p[(ll)1e5+5];
 ll sieve(){
 	for(ll i=2;i*i<=1e5;++i){
 		if(!p[i]){
