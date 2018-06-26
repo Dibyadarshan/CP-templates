@@ -11,6 +11,22 @@ typedef long double ld;
 
 ll mod=(ll)1e9+7;
 
+void update(ll idx, ll val){
+    while(idx<=n){
+        bit[idx]+=val;
+        idx+=(idx & (-idx));
+    }
+}
+
+ll query(ll idx){
+    ll ans=0;
+    while(idx>0){
+        ans+=bit[idx];
+        idx-=(idx & (-idx));
+    }
+    return ans;
+}
+
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
