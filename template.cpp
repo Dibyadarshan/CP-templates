@@ -4,20 +4,6 @@
 using namespace std;
 using ll = long long;
 
-const ll mod;
-
-ll expo(ll a, ll b) {
-	if(a == 0 && b > 0) return 0;
-	a = a % mod;
-	ll ret = 1;
-	while(b > 0) {
-		if(b & 1) ret = (ret * a) % mod;
-		a = (a * a) % mod;
-		b >>= 1;
-	}
-	return ret;
-}
-
 signed main() {
     IO;
 	// freopen("input", "r", stdin);
