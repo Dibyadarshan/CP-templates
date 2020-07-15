@@ -1,3 +1,3 @@
 # CP-templates
 
-Untested templates for programming contests.
+~Untested~ templates for programming contests.
